@@ -4,7 +4,8 @@ var assert = require('assert')
 require('chai').should()
 var expect = require('chai').expect
 var bsv = require('..')
-var buffer = require('buffer')
+var buffer = require('buffer/')
+const Buffer = buffer.Buffer
 var errors = bsv.errors
 var hdErrors = bsv.errors.HDPublicKey
 var JSUtil = require('../lib/util/js')

@@ -2,7 +2,8 @@
 
 var should = require('chai').should()
 var bsv = require('../..')
-var buffer = require('buffer')
+var buffer = require('buffer/')
+const Buffer = buffer.Buffer
 var Base58 = bsv.encoding.Base58
 
 describe('Base58', function () {
