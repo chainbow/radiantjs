@@ -1,5 +1,6 @@
 'use strict'
-
+var buffer = require('buffer/')
+const Buffer = buffer.Buffer
 var bsv = require('../..')
 var Random = bsv.crypto.Random
 
@@ -7,6 +8,7 @@ describe('Random', function () {
   describe('@getRandomBuffer', function () {
     it('should return a buffer', function () {
       var bytes = Random.getRandomBuffer(8)
+      console.log("🚀 ~ bytes:", bytes)
       bytes.length.should.equal(8)
       Buffer.isBuffer(bytes).should.equal(true)
     })

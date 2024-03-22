@@ -1,5 +1,6 @@
 'use strict'
-
+var buffer = require('buffer/')
+const Buffer = buffer.Buffer
 var radiantjs = module.exports
 
 // module information

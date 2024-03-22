@@ -1,5 +1,6 @@
 'use strict'
-
+var buffer = require('buffer/')
+const Buffer = buffer.Buffer
 var chai = require('chai')
 var expect = chai.expect
 var should = chai.should()

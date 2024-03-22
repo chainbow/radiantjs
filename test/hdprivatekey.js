@@ -1,5 +1,6 @@
 'use strict'
-
+var buffer = require('buffer/')
+const Buffer = buffer.Buffer
 var _ = require('../lib/util/_')
 var assert = require('assert')
 var should = require('chai').should()
@@ -7,8 +8,6 @@ var expect = require('chai').expect
 var bsv = require('..')
 var errors = bsv.errors
 var hdErrors = errors.HDPrivateKey
-var buffer = require('buffer/')
-const Buffer = buffer.Buffer
 var Networks = bsv.Networks
 var JSUtil = require('../lib/util/js')
 var HDPrivateKey = bsv.HDPrivateKey

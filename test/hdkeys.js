@@ -1,5 +1,6 @@
 'use strict'
-
+var buffer = require('buffer/')
+const Buffer = buffer.Buffer
 // Relax some linter options:
 //   * quote marks so "m/0'/1/2'/" doesn't need to be scaped
 //   * too many tests, maxstatements -> 100

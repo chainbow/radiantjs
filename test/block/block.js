@@ -1,5 +1,6 @@
 'use strict'
-
+var buffer = require('buffer/')
+const Buffer = buffer.Buffer
 var bsv = require('../..')
 var BN = require('../../lib/crypto/bn')
 var BufferReader = bsv.encoding.BufferReader

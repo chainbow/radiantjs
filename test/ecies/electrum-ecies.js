@@ -1,5 +1,6 @@
 'use strict'
-
+var buffer = require('buffer/')
+const Buffer = buffer.Buffer
 var ECIES = require('../../lib/ecies/electrum-ecies')
 
 var should = require('chai').should()
