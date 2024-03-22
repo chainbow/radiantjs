@@ -1,6 +1,5 @@
 'use strict'
-var buffer = require('buffer/')
-const Buffer = buffer.Buffer
+const Buffer = require('../../lib/util/bufferUtil');
 var ECDSA = require('../../lib/crypto/ecdsa')
 var Hash = require('../../lib/crypto/hash')
 var Privkey = require('../../lib/privatekey')

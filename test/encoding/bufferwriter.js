@@ -1,6 +1,5 @@
 'use strict'
-var buffer = require('buffer/')
-const Buffer = buffer.Buffer
+const Buffer = require('../../lib/util/bufferUtil');
 var bsv = require('../..')
 var should = require('chai').should()
 var BufferWriter = bsv.encoding.BufferWriter

@@ -1,6 +1,5 @@
 'use strict'
-var buffer = require('buffer/')
-const Buffer = buffer.Buffer
+const Buffer = require('../../lib/util/bufferUtil');
 var should = require('chai').should()
 var bsv = require('../..')
 var Base58 = bsv.encoding.Base58
@@ -21,7 +20,7 @@ describe('Base58', function () {
   })
   it('validates characters from buffer', function () {
     Base58.validCharacters(
-      buffer.Buffer.from('123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz')
+      Buffer.from('123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz')
     ).should.equal(true)
   })
 
@@ -42,7 +41,7 @@ describe('Base58', function () {
   describe('#set', function () {
     it('should set a blank buffer', function () {
       Base58().set({
-        buf: buffer.Buffer.from([])
+        buf: Buffer.from([])
       })
     })
   })

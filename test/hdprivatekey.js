@@ -1,6 +1,5 @@
 'use strict'
-var buffer = require('buffer/')
-const Buffer = buffer.Buffer
+const Buffer = require('../lib/util/bufferUtil');
 var _ = require('../lib/util/_')
 var assert = require('assert')
 var should = require('chai').should()
@@ -138,7 +137,7 @@ describe('HDPrivate key interface', function () {
   })
 
   it('returns InvalidLength if data of invalid length is given to getSerializedError', function () {
-    var b58s = Base58Check.encode(buffer.Buffer.from('onestring'))
+    var b58s = Base58Check.encode(Buffer.from('onestring'))
     expect(
       HDPrivateKey.getSerializedError(b58s) instanceof hdErrors.InvalidLength
     ).to.equal(true)

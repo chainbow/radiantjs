@@ -1,6 +1,5 @@
 'use strict'
-var buffer = require('buffer/')
-const Buffer = buffer.Buffer
+const Buffer = require('../../lib/util/bufferUtil');
 var should = require('chai').should()
 var bsv = require('../..')
 var BN = bsv.crypto.BN

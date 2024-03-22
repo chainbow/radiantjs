@@ -1,6 +1,4 @@
 'use strict'
-var buffer = require('buffer/')
-const Buffer = buffer.Buffer
 var bsv = require('../../..')
 var Transaction = bsv.Transaction
 var PrivateKey = bsv.PrivateKey

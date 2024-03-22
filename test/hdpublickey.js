@@ -1,6 +1,4 @@
 'use strict'
-var buffer = require('buffer/')
-const Buffer = buffer.Buffer
 var assert = require('assert')
 require('chai').should()
 var expect = require('chai').expect
@@ -73,7 +71,7 @@ describe('HDPublicKey interface', function () {
     describe('xpubkey string serialization errors', function () {
       it('fails on invalid length', function () {
         expectFailBuilding(
-          Base58Check.encode(buffer.Buffer.from([1, 2, 3])),
+          Base58Check.encode(Buffer.from([1, 2, 3])),
           hdErrors.InvalidLength
         )
       })

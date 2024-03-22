@@ -1,6 +1,5 @@
 'use strict'
-var buffer = require('buffer/')
-const Buffer = buffer.Buffer
+const Buffer = require('../../lib/util/bufferUtil');
 var _ = require('../../lib/util/_')
 var should = require('chai').should()
 var bsv = require('../..')
